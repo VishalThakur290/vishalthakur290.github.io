@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router';
+import Description from './components/Description';
+import Home from './components/Home';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+const App = () => {
+    return (
+        <div className="mainBody">
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/forecast" element={<Description />} />
+            </Routes>
+            <p className='watermark'>Made with <span style={{ color: 'red' }}>&#10084;</span> by <a target="_blank" rel="noreffer" href='https://www.instagram.com/vishal.thakur25/'>Vishal Thakur</a></p>
+        </div>
+    );
+};
 export default App;

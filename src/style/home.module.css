@@ -1,0 +1,145 @@
+.mainScreen{
+    height: 70vh;
+    width: 60%;
+    background-color: var(--secondary);
+    border-radius: 50px;
+    box-shadow: 5px 5px 100px var(--secondary-light);
+    text-align: center;
+    position: relative;
+}
+.mainScreen img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+}
+.mainScreen .center_content input{
+    width: 30%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--secondary-light);
+    color: var(--primary);
+}
+.mainScreen .wether_details{
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainScreen .wether_details p{
+    color: var(--white);
+    font-size: 60px;
+    font-weight: bold;
+    justify-content: baseline;
+}
+.mainScreen .wether_details_more p{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+.mainScreen button{
+    color: var(--white);
+    background-color: var(--primary);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.mainScreen button:hover{
+    color: var(--primary);
+    background-color: var(--white);
+}
+
+
+/* ========== responsive code ========== */
+
+
+/* for small devices */
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .mainScreen{
+        height: 90vh;
+        width: 90%;
+    }
+    .mainScreen .center_content input{
+        margin: 15px 0 15px 0;
+        width: 70%;
+    }
+    .mainScreen .wether_details p{
+        font-size: 20px;
+    }
+    .mainScreen .wether_details_more p{
+        font-size: 15px;
+    }
+    .mainScreen button{
+        margin: 15px 0 15px 0;
+    }
+}
+
+
+/* for medium devices */
+@media screen and (max-width: 390px) {
+    .mainScreen{
+        height: 90vh;
+        width: 90%;
+    }
+    .mainScreen .center_content input{
+        margin: 15px 0 15px 0;
+        width: 50%;
+    }
+    .mainScreen .wether_details p{
+        font-size: 18px;
+    }
+    .mainScreen .wether_details_more p{
+        font-size: 13px;
+    } 
+    .mainScreen button{
+        margin: 15px 0 15px 0;
+    }
+}
+
+/* for ipad Air */
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+    .mainScreen{
+        height: 90vh;
+        width: 90%;
+    }
+    .mainScreen .center_content input{
+        margin: 15px 0 15px 0;
+        width: 70%;
+    }
+    .mainScreen .wether_details p{
+        font-size: 25px;
+    }
+    .mainScreen .wether_details_more p{
+        font-size: 20px;
+    }
+    .mainScreen button{
+        margin: 15px 0 15px 0;
+    }
+}
+
+/* for ipad Mini */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .mainScreen{
+        height: 90vh;
+        width: 90%;
+    }
+    .mainScreen .center_content input{
+        margin: 15px 0 15px 0;
+        width: 70%;
+    }
+    .mainScreen .wether_details p{
+        font-size: 25px;
+    }
+    .mainScreen .wether_details_more p{
+        font-size: 20px;
+    }
+    .mainScreen button{
+        margin: 15px 0 15px 0;
+    }
+}

@@ -1,13 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("./assets/image/background-pattern.png")  repeat center/20%;
 }
-
+body .mainBody{
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-light) var(--white);  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.watermark{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+/* scrollbar color*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-light) ;
+  border-radius: 6px;
+  border: 3px solid var(--white);
+}
+
+
+/* color code variable */
+:root{
+  --primary: #3b28cc;
+  --secondary-dark: #2667ff;
+  --secondary: #3f8efc;
+  --secondary-light: #87bfff;
+  --accent: #add7f6;
+  --black: #000;
+  --white: #fff;
+  --warning: red;
+  --success: #17c3b2;
+}
+
+
+/* universal css */
+.main-heading{
+  font-size: 23px;
+  color: var(--white);
+  font-weight: 600;
+}
+
+
+/* responsive code */
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .main-heading{
+    font-size: 20px;
+    font-weight: 600;
+  }  
+}
+
+@media screen and (max-width: 390px) {
+  .main-heading{
+    font-size: 15px;
+  }  
 }
