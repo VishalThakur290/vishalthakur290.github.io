@@ -10,7 +10,7 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/forecast" element={<Description />} />
             </Routes>
-            <p className='watermark'>Made with <span style={{ color: 'red' }}>&#10084;</span> by <a target="_blank" rel="noreffer" href='https://www.instagram.com/vishal.thakur25/'>Vishal Thakur</a></p>
+            <p className='watermark'>Made with <span style={{ color: 'red' }}>&#10084;</span> by <a target="_blank" rel="noreferrer" href='https://www.instagram.com/vishal.thakur25/'>Vishal Thakur</a></p>
         </div>
     );
 };

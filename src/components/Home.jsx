@@ -52,7 +52,7 @@ const Home = () => {
                                     <p>Status: {currentState.current.condition.text}</p>
                                 </div>
                             </div>
-                            <img title={currentState.current.condition.text} src={currentState.current.condition.icon} />
+                            <img title={currentState.current.condition.text} src={currentState.current.condition.icon} alt="" />
                             <NavLink to="/forecast"><button>Check Full Forecast</button></NavLink>
                         </>
                     ) : (false)}

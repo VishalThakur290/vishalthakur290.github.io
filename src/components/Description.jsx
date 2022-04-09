@@ -1,4 +1,4 @@
-import Style from '../style/home.module.css';
+// import Style from '../style/home.module.css';
 
 const Description = () => {
     return (
