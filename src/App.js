@@ -4,7 +4,7 @@ import Description from './components/Description';
 import Home from './components/Home';
 
 const App = () => {
-    return (
+    return (    
         <div className="mainBody">
             <Routes>
                 <Route path="/" element={<Home />} />

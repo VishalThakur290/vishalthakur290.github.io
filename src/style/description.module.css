@@ -1,0 +1,117 @@
+.description_page_main_container {
+    height: 85vh;
+    width: 80%;
+    background-color: var(--white);
+    border-radius: 50px;
+    box-shadow: 5px 5px 100px var(--secondary-light);
+    text-align: center;
+    outline: 1.5px solid var(--secondary-light);
+}
+
+.description_page_main_container a {
+    text-decoration: none;
+}
+
+.description_page_main_container button {
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+    background-color: var(--white);
+    color: var(--secondary);
+    outline: 1.5px solid var(--secondary-light);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: 0.5s all;
+}
+
+.description_page_main_container button:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+    outline: 1.5px solid var(--secondary);
+}
+
+.description_page_main_container .locatio_info {
+    text-transform: capitalize;
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 20px;
+}
+.description_page_main_container .description_page_container{
+    /* box-shadow: 5px 5px 10px var(--grey); */
+    padding: 0 0 20px 0;
+}
+.description_page_main_container .description_page_container span{
+    color: var(--secondary-light);
+    font-weight: bold;
+}
+.description_page_main_container .description_page_container p, h3{
+    color: var(--secondary);
+    font-weight: bold;
+}
+.description_page_main_container .description_page_bottom_button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.description_page_main_container .description_page_bottom_button span{
+    background-color: var(--secondary-light);
+    color: var(--white);
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.description_page_main_container .description_page_bottom_button span.active_button{
+    background-color: var(--primary);
+}
+
+
+/* ========== responsive code ========== */
+
+
+/* for small devices */
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .description_page_main_container{
+        height: 80vh;
+        width: 90%;
+    }
+    .description_page_main_container .description_page_container{
+        padding: 0 0 60px 0;
+    }
+}
+
+
+/* for medium devices */
+@media screen and (max-width: 390px) {
+    .description_page_main_container{
+        height: 90vh;
+        width: 90%;
+    }
+    .description_page_main_container .description_page_container{
+        padding: 0 0 60px 0;
+    }
+}
+
+/* for ipad Mini */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .description_page_main_container{
+        height: 80vh;
+        width: 90%;
+    }
+    .description_page_main_container .description_page_container{
+        padding: 0 0 60px 0;
+    }
+}
+
+/* for ipad Air */
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+    .description_page_main_container{
+        height: 80vh;
+        width: 90%;
+    }
+    .description_page_main_container .description_page_container{
+        padding: 0 0 60px 0;
+    }
+}

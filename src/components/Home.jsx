@@ -6,11 +6,13 @@ import { CityName, WeatherData } from '../actions';
 
 const Home = () => {
     const dispatch = useDispatch();
+    const currentState = useSelector((currentState) => currentState.weatherData);
+    const currentCityName = useSelector((currentCity) => currentCity.cityName);
     const [state, setState] = useState({
         urlPrefix: 'https://api.weatherapi.com/v1/forecast.json?key=561fa84eabb94784afc162045220904&q=',
         urlPostfix: '&days=10&aqi=yes&alerts=no',
         isLoading: false,
-        city: '',
+        city: currentCityName,
     });
     const search = async () => {
         dispatch(CityName(state.city));
@@ -26,9 +28,6 @@ const Home = () => {
         dispatch(WeatherData(data));
         setState(prev => ({ ...prev, isLoading: false }));
     }
-
-    const currentState = useSelector((currentState) => currentState.weatherData);
-    const currentCityName = useSelector((currentCity) => currentCity.cityName);
 
     return (
         <div className={Style.mainScreen}>
@@ -48,6 +47,7 @@ const Home = () => {
                                 <p>{currentState.current.temp_f} <sup>&deg;F</sup></p>
                                 <div className={Style.wether_details_more}>
                                     <p>Wind: {currentState.current.wind_kph} k/h</p>
+                                    <p>Wind Direction: {currentState.current.wind_dir}</p>
                                     <p>Humidity: {currentState.current.humidity} %</p>
                                     <p>Status: {currentState.current.condition.text}</p>
                                 </div>
