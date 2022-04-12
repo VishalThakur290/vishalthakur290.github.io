@@ -10,7 +10,7 @@ import { Provider } from 'react-redux';
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename="/weather-app">
+      <BrowserRouter basename="/weather-app.github.io">
         <App />
       </BrowserRouter>
     </Provider>

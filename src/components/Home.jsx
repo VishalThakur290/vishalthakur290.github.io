@@ -37,7 +37,8 @@ const Home = () => {
                 <>
                     <div className={Style.center_content}>
                         <p className="main-heading">Right now in {currentCityName} !</p>
-                        <input type="text" placeholder="Enter City Name" value={state.city} onChange={(e) => setState((prev) => ({ ...prev, city: e.target.value }))} onBlur={search} />
+                        <input type="text" placeholder="Enter City Name" value={state.city} onChange={(e) => setState((prev) => ({ ...prev, city: e.target.value }))} />
+                        &nbsp;<button onClick={search}>Search</button>
                     </div>
                     {currentState.length !== 0 && !currentState.error ? (
                         <>
