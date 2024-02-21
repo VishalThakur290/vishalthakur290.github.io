@@ -19,7 +19,7 @@ const Home = () => {
         setState(prev => ({ ...prev, isLoading: true }))
         const cityNameWithSpace = await state.city.split(" ");
         var cityName = "";
-        await cityNameWithSpace.map((name) => {
+        await cityNameWithSpace.forEach((name) => {
             cityName += name;
         })
         var url = state.urlPrefix + cityName + state.urlPostfix;
