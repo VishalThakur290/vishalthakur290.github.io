@@ -1,11 +1,11 @@
 // import Style from '../style/home.module.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCube, Autoplay, Scrollbar, A11y } from "swiper";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Style from '../style/description.module.css'
 import { useSelector } from "react-redux";
 

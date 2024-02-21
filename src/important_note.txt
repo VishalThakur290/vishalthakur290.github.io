@@ -1,3 +1,5 @@
-Weather API key: 561fa84eabb94784afc162045220904
+Giving this just for the example.
 
-Example UR: https://api.weatherapi.com/v1/forecast.json?key=561fa84eabb94784afc162045220904&q=samastipur&days=10&aqi=yes&alerts=no
+Weather API key: 561fa84eabb94784afc162045220904golu
+
+Example URL: https://api.weatherapi.com/v1/forecast.json?key=561fa84eabb94784afc162045220904golu&q=samastipur&days=10&aqi=yes&alerts=no
