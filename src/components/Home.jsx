@@ -9,7 +9,7 @@ const Home = () => {
     const currentState = useSelector((currentState) => currentState.weatherData);
     const currentCityName = useSelector((currentCity) => currentCity.cityName);
     const [state, setState] = useState({
-        urlPrefix: `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_API_KEY}=`,
+        urlPrefix: `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_API_KEY}&q=`,
         urlPostfix: '&days=10&aqi=yes&alerts=no',
         isLoading: false,
         city: currentCityName,
